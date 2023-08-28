@@ -9,16 +9,20 @@ pipeline {
         CI = 'true'
     }
     stages {
-        stage('Build') {
-            steps {
-                sh 'npm install'
-            }
-        }
-        stage('Deliver') {
-            steps {
-                sh 'npm run build && npm start'
-                echo 'Deploy Success'
-            }
-        }
+       stage('One') {
+                 steps {
+                     echo 'Hi, welcome to pipeline demo...'
+                 }
+                 }
+                 stage('Two') {
+                 steps {
+                    echo('Sample testing of Stage 2')
+                 }
+                 }
+                 stage('Three') {
+                
+                 steps {
+                       echo 'Thanks for using Jenkins Pipeline'
+                 }
     }
 }
