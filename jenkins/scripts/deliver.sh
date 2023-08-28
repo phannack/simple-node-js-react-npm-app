@@ -7,8 +7,7 @@ set +x
 
 
 set -x
-npm start &
-sleep 1
+npm start
 set +x
 
 
