@@ -10,4 +10,4 @@ set -x
 npm start
 set +x
 
-
+echo 'hello'
